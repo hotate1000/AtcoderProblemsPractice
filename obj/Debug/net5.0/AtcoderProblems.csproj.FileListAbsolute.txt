@@ -1,0 +1,16 @@
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\bin\Debug\net5.0\AtcoderProblems.exe
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\bin\Debug\net5.0\AtcoderProblems.deps.json
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\bin\Debug\net5.0\AtcoderProblems.runtimeconfig.json
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\bin\Debug\net5.0\AtcoderProblems.runtimeconfig.dev.json
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\bin\Debug\net5.0\AtcoderProblems.dll
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\bin\Debug\net5.0\ref\AtcoderProblems.dll
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\bin\Debug\net5.0\AtcoderProblems.pdb
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.csprojAssemblyReference.cache
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.AssemblyInfoInputs.cache
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.AssemblyInfo.cs
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.csproj.CoreCompileInputs.cache
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.dll
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\ref\AtcoderProblems.dll
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.pdb
+C:\Users\ooo33\OneDrive\デスクトップ\プログラミング個人勉強\C#\AtcoderProblems\obj\Debug\net5.0\AtcoderProblems.genruntimeconfig.cache
