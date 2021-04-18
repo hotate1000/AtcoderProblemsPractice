@@ -1,10 +1,12 @@
 using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace AtcoderProblems
 {
   class ToiA
   {
+  //190番台
     // 198割合確認
     public void A_Div(){
       int N = int.Parse(Console.ReadLine());
@@ -136,7 +138,8 @@ namespace AtcoderProblems
       Console.WriteLine(winnerJudgment);
     }
 
-    //189
+  //180番台
+    //189同文字があるか検索
     public void A_Slot(){
       string str = Console.ReadLine();
       char[] ch = str.ToCharArray();
@@ -151,6 +154,56 @@ namespace AtcoderProblems
             Console.WriteLine("Won");
           }
       }
+    }
+
+    //188ポイント差
+    public void A_Three_Point_Shot(){
+      string[] str = Console.ReadLine().Split(" ");
+      int[] i = str.Select(str => int.Parse(str)).ToArray();
+      string a = (i.Max() - i.Min() < 3)?"Yes":"No";
+      Console.WriteLine(a);
+    }
+    
+    //187★数値分解し、比較
+    public void A_Large_Digits(){
+      string[] str = Console.ReadLine().Split();
+      int[] i = str.Select(str => int.Parse(str)).ToArray();
+      List<int> listInt = new List<int>();
+      for(int fi=0; fi < i.Length; fi++)
+      {
+        int count = 0;
+        while(i[fi] > 0)
+        {
+        count += i[fi] % 10;
+        i[fi] = i[fi] / 10;
+        }
+        listInt.Add(count);
+      }
+      Console.WriteLine(listInt.Max());
+    }
+
+    //186小数点の切り捨て
+    public void A_Brick(){
+      string[] str = Console.ReadLine().Split(" ");
+      int TotalAmount = int.Parse(str[0]);
+      int BrickAmount = int.Parse(str[1]);
+      double Answer = TotalAmount / BrickAmount;
+      Console.WriteLine(Math.Floor(Answer));
+    }
+    //185最小値を求める
+    public void A_ABC_Preparation(){
+      string[] str = Console.ReadLine().Split(" ");
+      int[] i = str.Select(str => int.Parse(str)).ToArray();
+      Console.WriteLine(i.Min());
+    }
+    //184クロスの掛け算
+    public void A_Determinant(){
+      string[] str1 = Console.ReadLine().Split(" ");
+      int[] i1 = str1.Select(str => int.Parse(str)).ToArray();
+      string[] str2 = Console.ReadLine().Split(" ");
+      int[] i2 = str2.Select(str => int.Parse(str)).ToArray();
+      int Anser = i1[0]*i2[1] - i1[1] * i2[0];
+      Console.WriteLine(Anser);
     }
   }
 }
