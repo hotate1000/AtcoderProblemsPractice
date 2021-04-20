@@ -205,5 +205,26 @@ namespace AtcoderProblems
       int Anser = i1[0]*i2[1] - i1[1] * i2[0];
       Console.WriteLine(Anser);
     }
+
+    //183
+    public void A_ReLU(){
+
+    } 
+    
+    //182
+    public void A_twiblr(){
+
+    } 
+    
+    //181
+    public void A_Heavy_Rotation(){
+
+    } 
+
+    
+    //180
+    public void A_box(){
+
+    } 
   }
 }

@@ -72,11 +72,31 @@ namespace AtcoderProblems
         Console.WriteLine(minM + " " + maxM);
       }
     }
-        // 198
+        // ◆194最小値の取得
     public void B_Job_Assignment(){
+            //       List<int> allJobList = new List<int>();
+            // List<int> aJobList = new List<int>();
+            // List<int> bJobList = new List<int>();
+
+            // int a;
+            // for(int sui=0; sui<3; sui++)
+            // {
+            //     string[] str = Console.ReadLine().Split(" ");
+            //     int[] i = str.Select(str => int.Parse(str)).ToArray();
+            //     allJobList.Add(i[0] + i[1]);
+            //     aJobList.Add(i[0]);
+            //     bJobList.Add(i[1]);
+
+
+            // }
+
+            // if(aJobList.Min() < bJobList.Min())
+            // {
+            //     a = aJobList.Min() + bJobList.Mi
+            // }
     }
-        // 198
-    public void B_Play_Snuke(){
+        // 193
+    public void B_Play_(){
     }
   }
 }
