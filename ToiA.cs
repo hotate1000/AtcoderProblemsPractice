@@ -202,29 +202,45 @@ namespace AtcoderProblems
       int[] i1 = str1.Select(str => int.Parse(str)).ToArray();
       string[] str2 = Console.ReadLine().Split(" ");
       int[] i2 = str2.Select(str => int.Parse(str)).ToArray();
-      int Anser = i1[0]*i2[1] - i1[1] * i2[0];
-      Console.WriteLine(Anser);
+      int Answer = i1[0]*i2[1] - i1[1] * i2[0];
+      Console.WriteLine(Answer);
     }
 
-    //183
+    //183条件分岐
     public void A_ReLU(){
-
+      string str = Console.ReadLine();
+      int i = int.Parse(str);
+      int kai = (i>0)?i:0;
+      Console.WriteLine(kai);
     } 
     
-    //182
+    //182フォロー数
     public void A_twiblr(){
-
+      string[] str = Console.ReadLine().Split(" ");
+      int[] i = str.Select(str => int.Parse(str)).ToArray();
+      int Follows = i[0];
+      int Followers = i[1];
+      int Comparison = Followers * 2 + 100;
+      
+      int Answer = Comparison - Follows;
+      Console.WriteLine(Answer);
+        
     } 
     
-    //181
+    //181シャツの色
     public void A_Heavy_Rotation(){
-
+      string str = Console.ReadLine();
+      int i = int.Parse(str);
+      string Answer = (i % 2 == 0)?"White":"Black";
+      Console.WriteLine(Answer);      
     } 
 
     
     //180
     public void A_box(){
-
-    } 
+      string[] str = Console.ReadLine().Split();
+      int[] i = str.Select(str=> int.Parse(str)).ToArray();
+      int Answer = i[0] - i[1] + i[2];
+      Console.WriteLine(Answer);    } 
   }
 }
