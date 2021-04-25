@@ -174,6 +174,47 @@ namespace AtcoderProblems
           Console.WriteLine(intb);
       }
     }
+    // 194最小値の取得（別回）
+    public void B_Job_Assignment2(){
+      string str = Console.ReadLine();
+			//入力した数値を取得する
+			int suu = int.Parse(str);
+			int[] a = new int[suu];
+			int[] b = new int[suu];
+			//繰り返し処理を行う
+			for (int i = 0; i < suu; i++)
+			{
+				string[] anbn = Console.ReadLine().Split(' ');
+				//仕事Aと仕事B用の配列を作成する
+				a[i] = int.Parse(anbn[0]);
+				b[i] = int.Parse(anbn[1]);
+			}
+			//比較用の値を作成する
+			int cnt = 0;
+			int min = 100000;
+			for (int k = 0; k < suu; k++)
+			{
+				for (int j = 0; j < suu; j++)
+				{
+					//配列の位置が同じ時
+					if (k == j)
+					{ 
+						cnt = a[k] + b[j];
+					}
+					else 
+					{ 
+						//下から二番目の数値を取得するため
+						cnt = Math.Max(a[k], b[j]); 
+					}
+					//全体、配列の位置が同じか、下から二番目の数値か確認する
+					min = Math.Min(min, cnt);
+				}
+			}
+			Console.WriteLine(min.ToString());
+    }
+
+
+
         // 193
     public void B_Play_(){
     }

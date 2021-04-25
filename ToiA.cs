@@ -138,6 +138,9 @@ namespace AtcoderProblems
       Console.WriteLine(winnerJudgment);
     }
 
+
+
+
   //180番台
     //189同文字があるか検索
     public void A_Slot(){
@@ -155,7 +158,6 @@ namespace AtcoderProblems
           }
       }
     }
-
     //188ポイント差
     public void A_Three_Point_Shot(){
       string[] str = Console.ReadLine().Split(" ");
@@ -163,7 +165,6 @@ namespace AtcoderProblems
       string a = (i.Max() - i.Min() < 3)?"Yes":"No";
       Console.WriteLine(a);
     }
-    
     //187★数値分解し、比較
     public void A_Large_Digits(){
       string[] str = Console.ReadLine().Split();
@@ -181,7 +182,6 @@ namespace AtcoderProblems
       }
       Console.WriteLine(listInt.Max());
     }
-
     //186小数点の切り捨て
     public void A_Brick(){
       string[] str = Console.ReadLine().Split(" ");
@@ -205,7 +205,6 @@ namespace AtcoderProblems
       int Answer = i1[0]*i2[1] - i1[1] * i2[0];
       Console.WriteLine(Answer);
     }
-
     //183条件分岐
     public void A_ReLU(){
       string str = Console.ReadLine();
@@ -213,7 +212,6 @@ namespace AtcoderProblems
       int kai = (i>0)?i:0;
       Console.WriteLine(kai);
     } 
-    
     //182フォロー数
     public void A_twiblr(){
       string[] str = Console.ReadLine().Split(" ");
@@ -221,12 +219,9 @@ namespace AtcoderProblems
       int Follows = i[0];
       int Followers = i[1];
       int Comparison = Followers * 2 + 100;
-      
       int Answer = Comparison - Follows;
       Console.WriteLine(Answer);
-        
     } 
-    
     //181シャツの色
     public void A_Heavy_Rotation(){
       string str = Console.ReadLine();
@@ -234,13 +229,58 @@ namespace AtcoderProblems
       string Answer = (i % 2 == 0)?"White":"Black";
       Console.WriteLine(Answer);      
     } 
-
-    
-    //180
+    //180ボックス取り出し調査
     public void A_box(){
-      string[] str = Console.ReadLine().Split();
-      int[] i = str.Select(str=> int.Parse(str)).ToArray();
-      int Answer = i[0] - i[1] + i[2];
-      Console.WriteLine(Answer);    } 
+			string[] str = Console.ReadLine().Split(" ");
+			int[] i = str.Select(str => int.Parse(str)).ToArray();
+			int a = i[0];
+			int b = i[1];
+			int c = i[2];
+			int answer = a - b + c;
+			Console.WriteLine(answer);
+    }
+
+
+
+
+  //170番台
+    //179同文字があるか検索
+    public void A_Plural_Form(){
+			string str = Console.ReadLine();
+			bool boo = str.EndsWith("s");
+			str = (boo)?str + "es":str + "s"; 
+			Console.WriteLine(str);
+    }
+    // 178文字判定
+    public void A_Not(){     
+      string str = Console.ReadLine();
+			if(str == "1")
+      {
+				Console.WriteLine("0");
+      }else if(str =="0")
+      {
+				Console.WriteLine("1");
+      }
+    }
+    // 177距離計算
+    public void A_Dont_Be_Late(){     
+			string[] str = Console.ReadLine().Split(" ");
+			int d = int.Parse(str[0]);
+			int t = int.Parse(str[1]);
+			int s = int.Parse(str[2]);
+			int distance = t * s;
+			string answer = (distance >= d)?"Yes":"No";
+			Console.WriteLine(answer);
+    }
+    // 176少数点の切り上げ
+    public void A_Takoyaki(){     
+			string[] str = Console.ReadLine().Split(" ");
+			int[] inti = str.Select(str => int.Parse(str)).ToArray();
+			decimal N = inti[0];
+			decimal X = inti[1];
+			decimal T = inti[2];
+			int answer = (int)Math.Ceiling(N / X) * (int)T;
+			Console.WriteLine(answer);
+    }
   }
 }
