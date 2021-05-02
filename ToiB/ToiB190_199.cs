@@ -215,8 +215,47 @@ namespace AtcoderProblems
 
 
 
-        // 193
-    public void B_Play_(){
+    // 193:製品の購入可否判断
+    public void B_Play_Snuke(){
+      int N = int.Parse(Console.ReadLine());
+      List<int> Answer = new List<int>();
+			int stock = -1;
+			for (int j=0; j<N; j++){
+				string[] str = Console.ReadLine().Split(" ");
+				int[] inti = str.Select(str => int.Parse(str)).ToArray();
+				stock = inti[2] - inti[0];
+          if (stock > 0)
+          {
+            Answer.Add(inti[1]);
+          }
+			}
+			int intAnswer = (Answer.Count != 0)? Answer.Min() : -1;
+			Console.WriteLine(intAnswer);
+    }
+
+
+    // 192:文字列の大文字小文字
+    public void B_uNrEaDaBLE_sTrinG(){
+      string str = Console.ReadLine();
+			char[] c1 = str.ToCharArray();
+        bool judgment = true;
+			for (int i=0; i<c1.Length; i++ )
+      {
+        //奇数
+				if(i % 2 == 0 && !char.IsLower(c1[i]))
+        {
+            judgment = false;
+            break;
+        }
+        //偶数
+				else if(i % 2 == 1 && !char.IsUpper(c1[i]))
+        {
+            judgment = false;
+            break;
+        }
+      }
+      string answer = (judgment)?"Yes":"No";
+      Console.WriteLine(answer);
     }
   }
 }
